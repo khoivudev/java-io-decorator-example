@@ -1,0 +1,1 @@
+The simple Java io example implement decorator pattern

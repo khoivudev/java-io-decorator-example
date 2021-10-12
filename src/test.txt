@@ -1,0 +1,2 @@
+Hello World.
+This is test file for our LowerCaseInputStream.

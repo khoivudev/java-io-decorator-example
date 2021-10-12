@@ -1,0 +1,19 @@
+@startuml
+abstract class InputStream
+abstract class FilterInputStream extends InputStream
+FilterInputStream --> InputStream : has-a
+
+package MainComponent {
+    class FileInputStream extends InputStream
+    class StringBufferInputStream extends InputStream
+    class ByteArrayInputStream extends InputStream
+}
+
+package Decorators {
+    class BufferedInputStream extends FilterInputStream
+    class DataInputStream extends FilterInputStream
+    class LineNumberInputStream extends FilterInputStream
+    class PushbackInputStream extends FilterInputStream
+    class LowerCaseInputStream extends FilterInputStream
+}
+@enduml
